@@ -1,0 +1,141 @@
+:root {
+    --background-color: hsl(30, 38%, 92%);
+    --font-color-1: hsl(212, 21%, 14%);
+    --font-color-2: hsl(228, 12%, 48%);
+    --font-green: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.desktop--hero--image {
+    aspect-ratio: 0.667;
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+}
+
+.mobile--hero--image {
+    width: 360px;
+    display: none;
+}
+
+.card {
+    display: flex;
+    margin: auto;
+}
+
+.card--main {
+    width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 0 8px 8px 0;
+}
+
+.card--main h1 {
+    letter-spacing: 4px;
+    color: var(--font-color-2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.card--main h2 {
+    color: var(--font-color-1);
+    font-size: 40px;
+    line-height: 38px;
+    margin: 20px 0;
+}
+
+.card--main p {
+    color: var(--font-color-2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.price--display {
+    display: flex;
+    align-items: center;
+}
+
+.discount--price {
+    color: var(--font-green) !important;
+    font-family: 'Fraunces', serif !important;
+    font-size: 32px !important;
+}
+
+.old--price {
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--font-green);
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+}
+
+.buton--text--holder {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.add--to--cart {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cart--icon {
+    color: #fff;
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: hsl(158, 37%, 25%);
+}
+
+@media only screen and (max-width: 700px){
+    .desktop--hero--image {
+        display: none;
+    }
+
+    .card--main h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 20px 0;
+    }
+
+    .card--main p {
+        font-size: 14px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .mobile--hero--image {
+        display: block;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card--main {
+        border-radius: 0 0 8px 8px;
+    }
+}

@@ -1,0 +1,122 @@
+:root {
+    --background-color: hsl(210, 46%, 95%);
+    --header-color: hsl(217, 19%, 35%);
+    --paragraph-color: hsl(212, 23%, 69%);
+    font-family: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.card--container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.card--image {
+    height: 300px;
+    width: 305px;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url("./images/drawers.jpg");
+}
+
+.card--main {
+    background-color: #fff;
+    height: 270px;
+    padding: 30px 25px 0 35px;
+}
+
+h1 {
+    color: var(--header-color);
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+.card--main h1 {
+    width: 400px;
+    font-size: 23px;
+}
+
+.card--main p {
+    margin-top: 10px;
+    width: 400px;
+    font-size: 14px;
+}
+
+.contact--picture {
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.card--contact {
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.contact--info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    block-size: fit-content;
+}
+
+.contact--info h1 {
+    font-size: 15px;
+    width: 150px;
+}
+
+.contact--info p {
+    margin-top: 4px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.contact--share {
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: auto;
+    background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 850px){
+    .card--container {
+        flex-direction: column;
+    }
+
+    .card--main {
+        width: 255px;
+        height: 255px;
+        padding: 30px 25px 0 25px;
+    }
+
+    .card--main h1 {
+        width: 255px;
+        font-size: 15px;
+    }
+    
+    .card--main p {
+        width: 255px;
+        font-size: 13px;
+    }
+
+    .contact--info {
+        width: 150px;
+    }
+}
