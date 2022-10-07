@@ -1,0 +1,161 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+
+    font-family: 'League Spartan', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    max-width: 1200px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px 80px 100px;
+}
+
+.hero--text {
+    width: 400px;
+}
+
+.hero--text h1 {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.hero--text p {
+    margin-top: 20px;
+    line-height: 20px;
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+}
+
+.hero--stars {
+    margin-top: 25px;
+}
+
+.star--card {
+    display: flex;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 18px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    width: 362px;
+}
+
+.star--card h2 {
+    margin-left: 20px;
+    font-size: 15px;
+    color: var(--Very-Dark-Magenta);
+}
+
+.scard--top {
+    position: relative;
+    right: 80px;
+}
+
+.scard--middle {
+    position: relative;
+    right: 40px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.review--card {
+    padding: 25px;
+    width: 260px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;
+}
+
+.reviewer--information {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer--profile--image {
+    aspect-ratio: 1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.reviewer--info {
+    margin-left: 20px;
+}
+
+.reviewer--info h1 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.reviewer--info p {
+    color: var(--Soft-Pink);
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.review--text {
+    margin-top: 20px;
+    color: #fff;
+    width: 270px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.review--two {
+    position: relative;
+    top: 15px;
+}
+
+.review--three {
+    position: relative;
+    top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .star--card {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero--text {
+        margin: 0 auto;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review--card {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .hero {
+        margin: 50px auto 30px auto;
+    }
+}
