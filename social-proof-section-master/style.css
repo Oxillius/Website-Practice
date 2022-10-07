@@ -158,4 +158,12 @@
     .hero {
         margin: 50px auto 30px auto;
     }
+
+    .star--card {
+        flex-direction: column;
+    }
+
+    .star--card h2 {
+        margin: 8px 0 0 0;
+    }
 }
