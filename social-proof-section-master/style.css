@@ -12,14 +12,17 @@
     padding: 0;
 }
 
-.body {
-    max-width: 1200px;
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
-    margin: 100px 100px 80px 100px;
+    max-width: 1200px;
+    margin-top: 50px;
 }
 
 .hero--text {
@@ -72,7 +75,8 @@
 .reviews {
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
+    min-width: 1020px;
+    margin-bottom: 80px;
 }
 
 .review--card {
@@ -146,6 +150,8 @@
 
     .reviews {
         flex-direction: column;
+        min-width: 100px;
+        margin-bottom: 0px;
     }
 
     .review--card {
