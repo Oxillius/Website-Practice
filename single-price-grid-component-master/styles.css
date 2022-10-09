@@ -1,0 +1,129 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--Light-Gray);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+}
+
+.main-container {
+    grid-column: span 2;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-container h1 {
+    color: var(--Cyan);
+}
+
+.text-container {
+    margin-top: 15px;
+}
+
+.text-container h2 {
+    color: var(--Bright-Yellow);
+    font-size: 18px;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+    margin-top: 10px;
+}
+
+.subscription-container {
+    background-color: var(--Cyan);
+    padding: 35px;
+    border-radius: 0 0 0 10px;
+}
+
+.subscription-container h1 {
+    font-size: 18px;
+}
+
+.subscription-price {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.subscription-price h1 {
+   font-size: 30px;
+}
+
+.subscription-price p {
+    font-size: 14px;
+    color: var(--Light-Gray);
+    margin-left: 10px;
+}
+
+.subscription-container p {
+    margin-top: 8px;
+    color: var(--Light-Gray);
+}
+
+.subscription-container button {
+    margin-top: 25px;
+    width: 255px;
+    padding: 15px 0;
+    background-color: var(--Bright-Yellow);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+
+.why-container {
+    padding: 35px;
+    background-color: hsl(179, 49%, 58%);
+    border-radius: 0 0 10px 0;
+}
+
+.why-container h1 {
+    font-size: 18px;
+}
+
+.reasons {
+    margin-top: 15px;
+}
+
+.reasons p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: var(--Light-Gray);
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        display: block;
+        max-width: 325px;
+        margin: 50px 10px;
+    }
+
+    .subscription-container {
+        border-radius: 0;
+    }
+
+    .why-container {
+        border-radius: 0 0 10px 10px;
+    }
+}
