@@ -1,0 +1,234 @@
+:root {
+    /* Text */
+
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+    /* Gradients */
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    /* Secondary */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Violet);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.phone-holder {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 35px;
+}
+
+.phone-display {
+    max-width: 280px;
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 30px;
+    height: 566px;
+}
+
+.phone-header {
+    padding: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
+    border-radius: 25px 25px 10px 10px;
+}
+
+.phone-notch {
+    width: 160px;
+    height: 25px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 0 20px 20px;
+}
+
+.bar {
+    display: flex;
+}
+
+.header-profile-content {
+    display: flex;
+}
+
+.dm-target-about {
+    margin-left: 10px;
+}
+
+.dm-target-about h1 {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 80%);
+}
+
+.dm-target-about p {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 40%);
+}
+
+.header-bar {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.svg-header {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(330deg) brightness(102%) contrast(102%);
+}
+
+.profile-dm-target {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 80%);
+    border-radius: 50%;
+}
+
+.misc-icon {
+    margin-left: auto;
+}
+
+.sent-message {
+    margin: 10px 0 0 8px;
+    padding: 10px;
+    width: 45%;
+    border-radius: 15px 15px 15px 5px;
+    background-color: #ede5f4;
+    color: var(--Moderate-Violet);
+    font-size: 9px;
+}
+
+.received-pics {
+    width: calc(150px + (8px * 3));
+    display: flex;
+    margin: 10px 0 0 auto;
+}
+
+.received-pics img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.received-message {
+    margin: 10px 8px 0 auto;
+    padding: 10px;
+    width: 45%;
+    border-radius: 15px 15px 5px 15px;
+    background-color: #fff;
+    color: #000;
+    font-size: 9px;
+}
+
+.sent-task {
+    border-radius: 15px 15px 15px 5px;
+    margin: 10px 0 0 8px;
+    padding: 10px 20px 10px 10px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+}
+
+.sent-task button {
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, 40%) !important;
+    border-radius: 50%;
+}
+
+.sent-task p {
+    margin-left: 10px;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 70%);
+}
+
+.sent-task h1 {
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 80%);
+    margin-left: auto;
+}
+
+.message-field {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px auto 0 auto;
+    padding: 5px 5px;
+    border-radius: 18px;
+    width: 90%;
+    font-size: 7px;
+    color: hsl(270, 20%, 90%);
+}
+
+.message-field h2 {
+    margin-left: 10px;
+}
+
+.send-message-button {
+    margin-left: auto;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.hero-text {
+    max-width: 450px;
+    margin-left: 100px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-weight: 500;
+}
+
+.hero-text p {
+    color: var(--Dark-Grayish-Violet);
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        margin: 75px 0;
+    }
+
+    .hero-text {
+        margin: 50px 50px 0 50px;
+        text-align: center;
+    }
+}
