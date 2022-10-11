@@ -1,0 +1,140 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    color: #fff;
+}
+
+img, svg {
+    aspect-ratio: auto;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.content-box {
+    margin: 30px;
+}
+
+/* Header */
+
+.company-logo {
+    width: 45%;
+    max-width: 200px;
+}
+
+/* Main Content */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-mockup {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.content-text {
+    text-align: center;
+}
+
+.content-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.content-text p {
+    margin: 20px 0;
+}
+
+.register-button {
+    color: var(--Violet);
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(45, 45, 45, 0.2);
+}
+
+.register-button:hover {
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+    transition: 0.1s;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.media-redirect {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px 8px 5px 8px;
+    margin-right: 15px;
+}
+
+.media-redirect:hover {
+    border: 1px solid var(--Soft-Magenta);
+    transition: 0.1s;
+}
+
+.media-redirect:hover .social-image {
+    fill: var(--Soft-Magenta);
+    transition: 0.1s;
+}
+
+.social-image {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        background-image: url("./images/bg-desktop.svg");
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        margin-top: 30px !important;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .app-mockup {
+        max-width: 100%;
+        width: 60%;
+    }
+
+    .content-text {
+        margin: 0px 50px 100px 40px;
+        text-align: left;
+    }
+
+    .content-text h1 {
+        font-size: 2.5em;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+}
