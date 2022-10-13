@@ -1,0 +1,133 @@
+:root {
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* Font */
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+}
+
+main {
+    padding: 0 3rem;
+}
+
+.text-box {
+    max-width: 52rem;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin: 7.5rem 0;
+}
+
+.text-box h1 {
+    font-size: 2.3rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1.2rem;
+}
+
+.text-box h2 {
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+
+.text-box p {
+    font-size: 1.5rem;
+}
+
+.teal-border {
+    border-top: 0.4rem solid var(--Cyan);
+}
+
+.red-border {
+    border-top: 0.4rem solid var(--Red);
+}
+
+.orange-border {
+    border-top: 0.4rem solid var(--Orange);
+}
+
+.blue-border {
+    border-top: 0.4rem solid var(--Blue);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.card {
+    border-radius: 0.6rem;
+    background-color: #fff;
+    box-shadow: 0 10px 16px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(147, 147, 147, 0.2);
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    max-width: 26rem;
+}
+
+.card h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 2rem;
+}
+
+.card p {
+    font-size: 1.3rem;
+    color: var(--Grayish-Blue);
+    line-height: 2.3rem;
+    margin-top: 0.8rem;
+}
+
+.card-image {
+    display: block;
+    margin: 2rem 0 0 auto;
+}
+
+@media only screen and (min-width: 35em) {
+    .text-box h1 {
+        font-size: 3.6rem;
+    }
+    
+    .text-box h2 {
+        font-size: 3.6rem;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .text-box {
+        margin: 7.5rem auto;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .card {
+        margin-right: 2rem;
+    }
+
+    .card:last-child {
+        margin-right: 0;
+    }
+}
